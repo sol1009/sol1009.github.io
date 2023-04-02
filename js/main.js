@@ -19,7 +19,7 @@ randomBg.innerHTML = `<img src='..//img/${randomNum}.png'>`;
 
 function handleLogOut() {
     window.localStorage.removeItem("userName");
-    location.replace('index.html');
+    location.replace('../index.html');
 }
 
 logOut.addEventListener("click", handleLogOut);
