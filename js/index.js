@@ -12,7 +12,7 @@ function handleLogin(e) {
     e.preventDefault();
     const userName = loginInput.value;
     localStorage.setItem(USERNAME_KEY, userName);
-    location.replace('main.html');
+    location.replace('./html/main.html');
     greeting.innerText = `Hello ${userName}`;
 }
 
