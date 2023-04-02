@@ -1,0 +1,131 @@
+body {
+    /* width: 100%; */
+    background-color: #82b3ff;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 100px minmax(600px, 1fr);
+    font-family: 'UhBeeBEOJJI';
+}
+
+.section-left {
+    box-sizing: border-box;
+    grid-column: span 1;
+    display: grid;
+    grid-template-rows: repeat(3, 0.5fr) 1fr;
+}
+
+#icon {
+    height: 150px;
+    width: 150px;
+    margin-right: 50px;
+}
+
+.user-greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}
+
+.user-greeting button {
+    margin: 50px 10px 0 10px;
+    border-style: none;
+    border-radius: 10%;
+    color: #82b3ff;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    border-radius: 10px 30px 10px 50px;
+    background-color: aliceblue;
+    margin: 30px;
+}
+
+#weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    background-color: #ab66dd;
+    border-radius: 30px 10px 50px;
+    margin: 30px;
+}
+
+#weather span {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.random-bg {
+    grid-row: -2 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #387fe9;
+    border-radius: 5%;
+    margin: auto;
+    padding: 10px
+}
+
+.random-bg img {
+    height: 400px;
+    width: 600px;
+    padding: 10px;
+    border-radius: 5%;
+    object-fit: fill;
+}
+
+.section-right {
+    grid-column: 3 / -1;
+    padding: 50px;
+}
+
+.right-wrap {
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 30px;
+    background-color: aliceblue;
+    height: 90vh;
+}
+
+#todo-title {
+    font-size: 3em;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+#todo-title span {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#todo-form {
+    text-align: center;
+}
+
+#todo-form input {
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    height: 30px;
+}
+
+#todo-list {
+    margin-left: 50px;
+    margin-top: 50px;
+    line-height: 50px;
+    font-size: 2em;
+    position: absolute;
+    z-index: 1;
+}
+
+#wrap-img {
+    opacity: 0.2;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
