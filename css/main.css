@@ -63,6 +63,7 @@ body {
 .random-bg {
     grid-row: -2 / -1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #387fe9;
